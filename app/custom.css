@@ -1,0 +1,54 @@
+
+.btn{
+    transition: all 300ms;
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+
+
+/*Home Page*/
+.mainContainer{
+    height: 100%;
+    padding: 0;
+
+}
+
+.carousel-img{
+    height: 100%;
+    width: 100%;
+    filter: brightness(50%);
+    background-size: cover;
+}
+
+#carousel-img-1{
+    background-image: url("../public/codeBackground.png");
+}
+
+#carousel-img-2{
+    /*background-color: black;*/
+}
+
+.mainContainer .carousel, .mainContainer .carousel-inner, .mainContainer .carousel-item{
+    height: 100%;
+}
+
+.mainContainer .carousel-caption{
+    top: 40%;
+}
+
+/*Projects Page*/
+
+.projects-container{
+    background-color: black;
+    height: 100%;
+}
+
+#project-video{
+    position:absolute;
+    bottom: -100px;
+    min-width: 100%;
+    min-height: 140%;
+    height: 100%;
+    filter: brightness(50%);
+}

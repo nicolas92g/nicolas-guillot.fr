@@ -1,0 +1,16 @@
+$primary: rgb(156, 255, 147);
+//$primary: rgb(126, 215, 108);
+$secondary : darken($primary, 50%);
+
+$theme-colors: (
+        'primary': $primary,
+        'secondary': $secondary
+);
+
+$link-color: $secondary;
+
+$border-radius: 30px;
+$btn-padding-y: 1rem;
+$btn-padding-x: 2rem;
+
+@import "node_modules/bootstrap/scss/bootstrap";
