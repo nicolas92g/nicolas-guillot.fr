@@ -5,12 +5,16 @@ export default function cvPage(){
     return (
         <>
             <Header />
-            <MainContainer >
-                <Accordion defaultActiveKey={['1', '2']} alwaysOpen>
+            <MainContainer>
+                <Accordion defaultActiveKey={['1', '3']} alwaysOpen>
                     <AccordionItem eventKey="1" >
                         <AccordionHeader><h2 className='m-0'>Présentation</h2></AccordionHeader>
                         <AccordionBody>
-                            <h4 className='my-3'>Mes premier pas</h4>
+                            <p className='text-body-emphasis '>
+                                Je recherche actuellement une alternance pour septembre 2024 ainsi qu'un stage de 2 mois pour juin 2024. je suis en mesure de débuter mon alternance le 2 septembre
+                                ou même fin août si nécessaire et je cherche un contrat d'apprentissage.
+                            </p>
+                            <h4 className='my-3'>Mes premier pas dans l'informatique</h4>
                             <p>
                                 Étudiant à l'<a href='https://www.esgi.fr/' target='_blank'>école supérieure de génie informatique</a>
                                 &nbsp; situé à Paris dans le 12<sup>ème</sup>, j'ai d'abord appris le développement en autodidacte grâce à
@@ -66,6 +70,36 @@ export default function cvPage(){
                             <ul>
                                 <li>Lycée Montalembert, Courbevoie</li>
                                 <li>Spécialité Physique-Chimie</li>
+                            </ul>
+                        </AccordionBody>
+                    </AccordionItem>
+                    <AccordionItem eventKey='3'>
+                        <AccordionHeader><h2 className='m-0'>Compétences</h2></AccordionHeader>
+                        <AccordionBody>
+                            <h4>Langages</h4>
+                            <ul>
+                                <li>Python</li>
+                                <li>Javascript</li>
+                                <li>Java</li>
+                                <li>PHP, HTML, CSS</li>
+                                <li>C/C++</li>
+                                <li>Go</li>
+                                <li>SQL</li>
+                            </ul>
+                            <h4>Technologies</h4>
+                            <ul>
+                                <li>Git, GitHub</li>
+                                <li>Node.js, NPM</li>
+                                <li>React, Next.js</li>
+                                <li>Bootstrap, Laravel</li>
+                                <li>MySql, Oracle DB</li>
+                                <li>Notebook Python, Scikit-Learn</li>
+                                <li>Linux, Docker</li>
+                                <li>VBA, Excel</li>
+                                <li>Power Apps, SharePoint</li>
+                                <li>Android Studio, Kotlin</li>
+                                <li>VMware Workstation Pro, Proxmox</li>
+                                <li>PfSense</li>
                             </ul>
                         </AccordionBody>
                     </AccordionItem>

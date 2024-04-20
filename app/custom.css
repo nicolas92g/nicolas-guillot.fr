@@ -6,12 +6,11 @@
     transform: scale(1.05);
 }
 
-
 /*Home Page*/
 .mainContainer{
     height: 100%;
     padding: 0;
-
+    background-color: black;
 }
 
 .carousel-img{
@@ -37,18 +36,17 @@
     top: 40%;
 }
 
+#project-video{
+    position:absolute;
+    right: 0;
+    bottom: -100px;
+    min-width: 100vw;
+    filter: brightness(40%);
+}
+
 /*Projects Page*/
 
 .projects-container{
-    background-color: black;
-    height: 100%;
+    color: black;
 }
 
-#project-video{
-    position:absolute;
-    bottom: -100px;
-    min-width: 100%;
-    min-height: 140%;
-    height: 100%;
-    filter: brightness(50%);
-}
