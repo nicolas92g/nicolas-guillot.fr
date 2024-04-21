@@ -11,7 +11,7 @@ export default function ContactPage() {
                     <div className='col-10'>
                         <ListGroup>
                             <ListGroupItem className='p-5'>
-                                <h1 className='text-center '>Mes contacts</h1>
+                                <h1 className='text-center '>Mes réseaux</h1>
                             </ListGroupItem>
                             <ListGroupItem className='p-3'>
                                 Adresse mail : <a href='mailto:nicolasguillot92@gmail.com'>nicolasguillot92@gmail.com</a>
