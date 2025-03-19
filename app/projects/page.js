@@ -1,11 +1,33 @@
-import {Footer, Header, MainContainer, ProjectListContainer} from "@/app/components";
-import {Container} from "react-bootstrap";
+import {Footer, Header, ProjectListContainer} from "@/app/components";
 
 export default function Projects(){
     return (
         <>
             <Header/>
             <main className="container-fluid projects-container p-0">
+                <ProjectListContainer image='codeBackground.png' darkness={.6} height={100}>
+                    <article className="col-10">
+                        <h1 className='text-center mb-3'>Mes Projets</h1>
+                        <p className="text-center scroll-indicator">&#x2193;</p>
+                    </article>
+                </ProjectListContainer>
+                <ProjectListContainer height={50}>
+                    <article className="col-10">
+                        <h1 className='text-center mb-5'>Projet annuel de 3<sup>ème</sup> année (en cours...)</h1>
+                        <p>
+                            Dans le cadre de cette première année de spécialisation en IA et Big Data, nous devons créer
+                            <strong> notre propre implémentation</strong> de plusieurs algorithmes de <strong>machine learning en C++</strong> :
+                        </p>
+                        <ul>
+                            <li>Modèle linéaire</li>
+                            <li>Perceptron Multi Couches</li>
+                            <li>Radial Basis Function Network</li>
+                            <li>SVM</li>
+                        </ul>
+                        Ensuite nous devons choisir des exemples et créer des <strong>datasets</strong> grâce auxquelles il faut <strong>entrainer un modèle </strong>
+                        et le mettre en production sur une application.
+                    </article>
+                </ProjectListContainer>
                 <ProjectListContainer image='pa2024.png' height={100}>
                     <article className="col-10">
                         <h1 className='text-center mb-5'>Projet annuel de 2<sup>ème</sup> année à l'ESGI</h1>

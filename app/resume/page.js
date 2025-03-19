@@ -1,4 +1,4 @@
-import {Footer, MainContainer, Header, Title, TitleLink, ArticleTitle} from "@/app/components";
+import {Footer, Header, MainContainer} from "@/app/components";
 import {Accordion, AccordionBody, AccordionHeader, AccordionItem} from "react-bootstrap";
 
 export default function cvPage(){
@@ -6,12 +6,12 @@ export default function cvPage(){
         <>
             <Header />
             <MainContainer>
-                <Accordion defaultActiveKey={['1']} alwaysOpen>
+                <Accordion defaultActiveKey={['1', '2']} alwaysOpen>
                     <AccordionItem eventKey="1" >
                         <AccordionHeader><h2 className='m-0'>Présentation</h2></AccordionHeader>
                         <AccordionBody>
                             <p className='text-body-emphasis '>
-                                Je recherche actuellement un contrat d'apprentissage pour septembre 2024 ainsi qu'un stage de 2 mois pour juin 2024.
+                                Je recherche actuellement un contrat d'apprentissage pour septembre 2025.
                                 Mon rythme d'alternance est de 3 semaines en entreprise pour 1 semaine d'école.
                             </p>
                             <h4 className='my-3'>Mes premiers pas dans l'informatique</h4>
@@ -30,19 +30,29 @@ export default function cvPage(){
                             </p>
                             <h4 className='my-3'>Ma spécialisation</h4>
                             <p>
-                                Actuellement en deuxième année, je souhaite me spécialiser dans le domaine de l'intelligence artificielle
-                                et du Big data à partir de l'année prochaine jusqu'à l'obtention d'un mastère en 2027. Ce domaine a attiré
+                                Actuellement en troisième année, je me spécialise actuellement dans le domaine de l'intelligence artificielle
+                                et du Big data jusqu'à l'obtention du mastère en 2027. Ce domaine a attiré
                                 mon attention car c'est un sujet d'avenir qui offre beaucoup d'opportunités. J'ai également une certaine
-                                appétence pour les mathématiques et l'algorithmie avancée.
+                                appétence pour les mathématiques, l'algorithmie avancée et les langages de bas niveau.
                             </p>
                         </AccordionBody>
                     </AccordionItem>
                     <AccordionItem eventKey='2'>
                         <AccordionHeader><h2 className='m-0'>Expérience professionnelle</h2></AccordionHeader>
                         <AccordionBody>
+                            <h4 className='my-3'>Alternant développeur Java</h4>
+                            <ul>
+                                <li>CNP Assurances, Issy-les-Moulineaux (09/2024 – 09/2025)</li>
+                                <li>Développement Logiciel Java, Spring</li>
+                                <li>rédaction de requête SQL pour OracleDB, scripts Liquibase</li>
+                                <li>rédaction et utilisation de tickets Jira</li>
+                                <li>Méthodologie agile, organisation de réunion agile</li>
+                                <li>Utilisation de Git, GitLab</li>
+                                <li>Communication régulière avec le métier</li>
+                            </ul>
                             <h4 className='my-3'>Stagiaire développeur d'application Power Apps</h4>
                             <ul>
-                                <li>RTE France La Défense (06/2023 – 07/2023)</li>
+                                <li>RTE France, La Défense (06/2023 – 07/2023)</li>
                                 <li>Création d’une interface graphique améliorant l’accès aux données Excel
                                 destinées au management</li>
                                 <li>Développement d’une application de réservation de rendez-vous à l’IT et
@@ -81,10 +91,12 @@ export default function cvPage(){
                                 <li>Git, GitHub</li>
                                 <li>Node.js, NPM</li>
                                 <li>React, Next.js</li>
+                                <li>Docker, Linux</li>
+                                <li>Spring</li>
+                                <li>Liquibase</li>
                                 <li>Bootstrap, Laravel</li>
                                 <li>MySql, Oracle DB</li>
                                 <li>Notebook Python, Scikit-Learn</li>
-                                <li>Linux, Docker</li>
                                 <li>VBA, Excel</li>
                                 <li>Power Apps, SharePoint</li>
                                 <li>Android Studio, Kotlin</li>
@@ -131,7 +143,7 @@ export default function cvPage(){
                         <AccordionHeader><h2 className='m-0'>Loisirs</h2></AccordionHeader>
                         <AccordionBody>
                             <ul>
-                                <li>Escalade, Athlétisme, Ski</li>
+                                <li>Cyclisme, Escalade, Athlétisme, Ski</li>
                                 <li>Guitare : 12 ans de pratique</li>
                                 <li>Lecture : romans historiques</li>
                             </ul>

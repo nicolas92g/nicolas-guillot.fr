@@ -1,8 +1,7 @@
 import {Button, Carousel, CarouselCaption, CarouselItem} from 'react-bootstrap';
-import {Footer, Header, MainContainer} from "@/app/components";
+import {Footer, Header} from "@/app/components";
 
 export default function Home() {
-    const goResume = () => {location.href='/resume'};
     return (
         <>
             <Header></Header>
@@ -28,15 +27,6 @@ export default function Home() {
                             <Button href='/projects' variant='outline-primary'>Voir les projets</Button>
                         </CarouselCaption>
                     </CarouselItem>
-                    {/*<CarouselItem>
-                        <div className="carousel-img" id="carousel-img-3"></div>
-                        <CarouselCaption>
-                            <h3>Third slide label</h3>
-                            <p>
-                                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                            </p>
-                        </CarouselCaption>
-                    </CarouselItem>*/}
                 </Carousel>
             </main>
             <Footer/>
